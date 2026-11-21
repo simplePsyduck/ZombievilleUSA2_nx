@@ -9,8 +9,7 @@ shared **android32** runtime (`runtime/`), like SoulCalibur_nx and
 AmateurSurgeon3_nx / AmateurSurgeon4_nx.
 
 **It ships no game code and no game data.** You supply the APK of a copy you
-own. `.gitignore` excludes `*.apk`, `*.obb`, `lib*.so`, `gamefiles/` and
-`assets/`, so none of them can be committed by accident.
+own.
 
 ## Status: complete draft, NOT yet built or run on a console
 
@@ -30,7 +29,8 @@ FMOD rate/voice patches and its mod/DuckTales parts. FMOD's Java output pump (`d
    `sdmc:/switch/zombievilleusa2_nx/`.
 2. Copy your own **APK** (any name ending in `.apk`) into that same folder, next
    to the `.nro`.
-3. Start it. The first launch **renames the APK to `game.apk` and rewrites it
+3. Create a forwarder using sphaira then launch the game using the icon on the home screen.
+4. The first launch **renames the APK to `game.apk` and rewrites it
    with its assets stored** (Unity reads its data from the APK in place and would
    otherwise inflate every file at each read), unpacks the three libraries from
    it, and lists its Java classes. It needs free space for a second copy of the
