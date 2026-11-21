@@ -1,0 +1,27 @@
+# build outputs
+/build/
+/portlibs32/
+/SD_CARD/
+/SD_CARD.zip
+*.elf
+*.nsp
+*.nro
+*.nacp
+*.npdm
+*.nso
+/zombievilleusa2_nx.build
+/launcher/build/
+/launcher/romfs/
+
+# logs from a console (they carry the console's install id): not shared
+/debug/
+
+# NO GAME FILES, EVER: the player supplies their own APK
+*.apk
+*.obb
+*.xapk
+/gamefiles/
+/assets/
+lib*.so
+*.sav
+.DS_Store
